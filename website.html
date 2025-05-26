@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Restaurant Website</title>
+
+  <!-- Stylish fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #f5e8dc, #d2b48c);
+      font-size: 18px;
+    }
+
+    header {
+      color: white;
+      padding: 80px 50px;
+      text-align: center;
+      background-image: url("pexels-shameel-mukkath-3421394-5640024.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    header img.logo {
+      height: 100px;
+      vertical-align: middle;
+      border-radius: 10px;
+      padding: 5px;
+    }
+
+    header h1 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 80px;
+      font-style: normal;
+    }
+
+    nav {
+      background-color: #333;
+      overflow: hidden;
+    }
+
+    nav a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-family: 'Poppins', sans-serif;
+      font-size: 18px;
+    }
+
+    nav a:hover {
+      background-color: #575757;
+    }
+
+    .content {
+      padding: 40px 20px;
+      font-size: 18px;
+      text-align: center;
+    }
+
+    .content h2 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 38px;
+      margin-bottom: 20px;
+    }
+
+    .content p {
+      max-width: 900px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    .menu-section {
+      padding: 40px 20px;
+      background-color: rgba(255, 255, 255, 0.85);
+    }
+
+    .menu-section h2 {
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 42px;
+    }
+
+    .menu-section h3 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 28px;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .menu-grid .menu-item {
+      text-align: center;
+    }
+
+    .menu-grid img {
+      width: 100%;
+      height: 170px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .menu-grid img:hover {
+      transform: scale(1.03);
+    }
+
+    .menu-item p {
+      margin-top: 10px;
+      font-size: 16px;
+    }
+
+    .contact {
+      background: linear-gradient(to right, #f5e8dc, #d2b48c);
+      padding: 40px 20px;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .contact h3 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .contact p {
+      margin: 8px 0;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 30px;
+      align-items: start;
+      padding: 40px 20px;
+      background-color: #f9f9f9;
+    }
+
+    .about-grid .about-text {
+      font-size: 18px;
+    }
+
+    .about-grid .about-text h2 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    .about-grid .about-text p {
+      line-height: 1.6;
+    }
+
+    .about-grid .about-image img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.jpg" alt="Restaurant Logo" class="logo">
+    <h1>Welcome to Tasty Bites</h1>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#about">About Us</a>
+    <a href="#contact">Contact Us</a>
+  </nav>
+
+  <div class="content">
+    <h2>Fresh Flavors, Crafted with Passion</h2>
+    <p>
+      At Tasty Bites, every dish is a celebration of flavor, freshness, and finesse.
+      We combine traditional recipes with a modern twist to create meals that not only satisfy your hunger
+      but also delight your senses. Whether you're ordering in or dining out, our mission is to bring
+      a gourmet experience to your table — every bite, every time.
+    </p>
+  </div>
+
+  <div id="menu" class="menu-section">
+    <h2>Our Menu</h2>
+
+    <h3>Starters</h3>
+    <div class="menu-grid">
+      <div class="menu-item"><img src="starter1.jpg.png" alt="Starter 1"><p>Spring Rolls</p></div>
+      <div class="menu-item"><img src="starter2.jpg.png" alt="Starter 2"><p>Garlic Bread</p></div>
+      <div class="menu-item"><img src="starter3.jpg.png" alt="Starter 3"><p>Bruschetta</p></div>
+      <div class="menu-item"><img src="starter4.jpg.png" alt="Starter 4"><p>Fried Calamari</p></div>
+    </div>
+
+    <h3>Deals</h3>
+    <div class="menu-grid">
+      <div class="menu-item"><img src="deal3.jpg.png" alt="Deal 1"><p>Combo Meal</p></div>
+      <div class="menu-item"><img src="deal2.jpg.png" alt="Deal 2"><p>Family Pack</p></div>
+      <div class="menu-item"><img src="deal1.jpg.png" alt="Deal 3"><p>Pizza Combo</p></div>
+      <div class="menu-item"><img src="deal4.jpg.png" alt="Deal 4"><p>Burger Meal</p></div>
+    </div>
+
+    <h3>Desserts</h3>
+    <div class="menu-grid">
+      <div class="menu-item"><img src="desert1.jpg" alt="Dessert 1"><p>Chocolate Cake</p></div>
+      <div class="menu-item"><img src="desert2.jpg" alt="Dessert 2"><p>Ice Cream</p></div>
+      <div class="menu-item"><img src="desert3.jpg" alt="Dessert 3"><p>Cheesecake</p></div>
+      <div class="menu-item"><img src="desert4.jpg" alt="Dessert 4"><p>Fruit Tart</p></div>
+    </div>
+  </div>
+
+  <div id="about" class="about-grid">
+    <div class="about-text">
+      <h2>About Us</h2>
+      <p>
+        Tasty Bites isn't just a restaurant — it's a culinary journey inspired by passion and perfected by experience.
+        From the vibrant colors in our dishes to the warm smiles of our team, every detail reflects our commitment to excellence.
+        We believe in good vibes, great service, and food that speaks to the heart. Whether you're a regular or a first-time guest,
+        you’re part of the Tasty Bites family. Join us and taste the difference passion makes.
+      </p>
+    </div>
+    <div class="about-image">
+      <img src="Theme.jpg" alt="Team Photo">
+    </div>
+    <div class="about-image">
+      <img src="theme2.jpg" alt="Kitchen Action">
+    </div>
+  </div>
+
+  <div id="contact" class="contact">
+    <h3>Contact Us</h3>
+    <p>
+      Email: 
+      <a href="mailto:daudmustafa22@gmail.com">daudmustafa22@gmail.com</a> |
+      <a href="mailto:harismarwat.5475@gmail.com">harismarwat.5475@gmail.com</a>
+    </p>
+    <p>Phone: +92 345 123456</p>
+    <p>Address: 123 Food Street, Bahria University Islamabad</p>
+  </div>
+
+  <footer>
+    &copy; 2025 Tasty Bites. All rights reserved.
+  </footer>
+</body>
+</html>
